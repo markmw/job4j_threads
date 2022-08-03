@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f18f7f23-5c59-4369-85e7-a0c396c6dffe" name="Changes" comment="1. Запуск нити. Thread#start() [#1016]-6">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/job4j/concurrent/ThreadState.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2CpTcq5MdncK9IWIgMZJ3IhkTaW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="org.infernus.idea.checkstyle.CheckStyleConfigurable" />
+  </component>
+  <component name="RunManager" selected="Application.ThreadState">
+    <configuration name="ConcurrentOutput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.concurrent.ConcurrentOutput" />
+      <module name="job4j_threads" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.concurrent.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThreadState" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.concurrent.ThreadState" />
+      <module name="job4j_threads" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.concurrent.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ThreadState" />
+        <item itemvalue="Application.ConcurrentOutput" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f18f7f23-5c59-4369-85e7-a0c396c6dffe" name="Changes" comment="" />
+      <created>1659498608972</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1659498608972</updated>
+    </task>
+    <task id="LOCAL-00001" summary="1. Запуск нити. Thread#start() [#1016]">
+      <created>1659499131387</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1659499131387</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1. Запуск нити. Thread#start() [#1016]">
+      <created>1659499346923</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1659499346923</updated>
+    </task>
+    <task id="LOCAL-00003" summary="1. Запуск нити. Thread#start() [#1016]-2">
+      <created>1659500696827</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659500696827</updated>
+    </task>
+    <task id="LOCAL-00004" summary="1. Запуск нити. Thread#start() [#1016]-3">
+      <created>1659500785766</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1659500785766</updated>
+    </task>
+    <task id="LOCAL-00005" summary="1. Запуск нити. Thread#start() [#1016]-4">
+      <created>1659500842600</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1659500842600</updated>
+    </task>
+    <task id="LOCAL-00006" summary="1. Запуск нити. Thread#start() [#1016]-5">
+      <created>1659500978972</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1659500978972</updated>
+    </task>
+    <task id="LOCAL-00007" summary="1. Запуск нити. Thread#start() [#1016]-6">
+      <created>1659501158690</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1659501158690</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1. Запуск нити. Thread#start() [#1016]" />
+    <MESSAGE value="1. Запуск нити. Thread#start() [#1016]-2" />
+    <MESSAGE value="1. Запуск нити. Thread#start() [#1016]-3" />
+    <MESSAGE value="1. Запуск нити. Thread#start() [#1016]-4" />
+    <MESSAGE value="1. Запуск нити. Thread#start() [#1016]-5" />
+    <MESSAGE value="1. Запуск нити. Thread#start() [#1016]-6" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. Запуск нити. Thread#start() [#1016]-6" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
