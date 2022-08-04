@@ -16,7 +16,7 @@ public class ContentLoad {
             try (BufferedInputStream i = new BufferedInputStream(new FileInputStream(file))) {
                 int data;
                 char dataF;
-                while ((data = i.read()) > 0) {
+                while ((data = i.read()) != -1) {
                     dataF = (char) data;
                     if (filter.test(dataF)) {
                         output.append(dataF);
