@@ -32,4 +32,8 @@ public class SimpleBlockingQueue<T> {
         this.notify();
         return rsl;
     }
+
+    public boolean isEmpty() {
+        return this.queue.isEmpty();
+    }
 }
