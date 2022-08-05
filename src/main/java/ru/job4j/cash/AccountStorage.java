@@ -16,11 +16,7 @@ public class AccountStorage {
     }
 
     public synchronized boolean update(Account account) {
-        boolean isUpdated = accounts.containsKey(account.id());
-        if (isUpdated) {
-            accounts.put(account.id(), account);
-        }
-        return isUpdated;
+        return accounts.replace(account.id(), accounts.get(account.id()), account);
     }
 
     public synchronized boolean delete(int id) {
@@ -28,7 +24,7 @@ public class AccountStorage {
     }
 
     public synchronized Optional<Account> getById(int id) {
-        return accounts.get(id) != null ? Optional.of(accounts.get(id)) : Optional.empty();
+        return Optional.ofNullable(accounts.get(id));
     }
 
     public synchronized boolean transfer(int fromId, int toId, int amount) {
