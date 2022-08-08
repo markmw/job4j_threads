@@ -15,14 +15,10 @@ public class ThreadPool {
             Thread thread = new Thread(
                     () -> {
                         while (!Thread.currentThread().isInterrupted()) {
-                            Runnable task = null;
                             try {
-                                task = tasks.poll();
+                                tasks.poll().run();
                             } catch (InterruptedException ie) {
                                 Thread.currentThread().interrupt();
-                            }
-                            if (task != null) {
-                                task.run();
                             }
                         }
                     }
