@@ -1,8 +1,6 @@
 package ru.job4j.pools;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Objects;
+import java.util.*;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 
@@ -66,13 +64,8 @@ public class RolColSum {
 
     public static Sums[] asyncSum(int[][] matrix) throws ExecutionException, InterruptedException {
         Sums[] sums = new Sums[matrix.length];
-        int n = matrix.length;
-        Map<Integer, CompletableFuture<Sums>> futureMap = new HashMap<>();
-        for (int i = 0; i < n; i++) {
-            futureMap.put(i, getTask(matrix, i, n - 1));
-        }
-        for (Integer key : futureMap.keySet()) {
-            sums[key] = futureMap.get(key).get();
+        for (int i = 0; i < matrix.length; i++) {
+            sums[i] = getTask(matrix, i, matrix.length - 1).get();
         }
         return sums;
     }
