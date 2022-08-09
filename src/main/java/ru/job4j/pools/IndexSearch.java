@@ -1,5 +1,6 @@
 package ru.job4j.pools;
 
+import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.RecursiveTask;
 
 public class IndexSearch<T> extends RecursiveTask<Integer> {
@@ -7,6 +8,7 @@ public class IndexSearch<T> extends RecursiveTask<Integer> {
     private final int from;
     private final int to;
     private final T value;
+    private final static int LIMIT = 10;
 
     public IndexSearch(T[] array, int from, int to, T obj) {
         this.array = array;
@@ -18,7 +20,7 @@ public class IndexSearch<T> extends RecursiveTask<Integer> {
     @Override
     protected Integer compute() {
         int mid = (from + to) / 2;
-        if (mid - from <= 10 || to - mid - 1 <= 10) {
+        if (to - from <= LIMIT) {
             return lightSearch();
         }
         IndexSearch<T> leftSearch = new IndexSearch<>(array, from, mid, value);
@@ -39,5 +41,11 @@ public class IndexSearch<T> extends RecursiveTask<Integer> {
             }
         }
         return rsl;
+    }
+
+    public static <T> int indexOf(T[] array, T value) {
+        ForkJoinPool forkJoinPool = new ForkJoinPool();
+        IndexSearch<T> indexSearch = new IndexSearch<>(array, 0, array.length - 1, value);
+        return forkJoinPool.invoke(indexSearch);
     }
 }
